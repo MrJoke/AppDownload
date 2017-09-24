@@ -17,12 +17,8 @@
 
 <div class="main">
 
-
-    <!--a href="gamesm.html"><span id="caozuo">操作简介</span></a-->
 </div>
-<!--<div id="nav">-->
-    <!---->
-<!--</div>-->
+
 <div id="cont">
     <div id="frame">
         <ul class="slidee">
@@ -52,28 +48,17 @@
 <div id="text"></div>
 <div class= "bottomCont" style="position:fixed"><p style="height:30px;line-height:30px;background-color: rgba(195, 194, 194, 0.8); width: 100%; color: #969494; font-size: 14px;text-align:center">京ICP备17027828号</p> </div>
 
-<!--top开始-->
-
-<!--<div class="banner">-->
-    <!--<img style="zoom:0.2" src="images/img_gamelogo.png">-->
-    <!--<span><a href="gamesm.html" class="instrBtn"><span style=" padding: 7px; display:inline-block">操作简介</span></a></span>-->
-<!--</div>-->
-
-<!--top结束-->
 <script>
-//    document.body.addEventListener('touchmove', function (event) {event.preventDefault();}, true);
     var u = navigator.userAgent;
     var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
     var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
     var cont = null;
     var bottCont = null;
     if (isAndroid) {
-
-
     }
     if (isiOS) {
-        bottCont = '<a href="itms-services://?action=download-manifest&amp;url=https://htmlpreview.github.io/?https://github.com/MrJoke/AppDownload/blob/master/gyzy/ios/manifest.plist"><span class="instrBtn">下载</span></a>';
-        cont = '<a href="itms-services://?action=download-manifest&amp;url=https://htmlpreview.github.io/?https://github.com/MrJoke/AppDownload/blob/master/gyzy/ios/manifest.plist"><P><img  width ="80px" src="images/icon-srmj.png"/></P></a><div class="main_info"> <p class="game_name">山人麻将</p> <p>ios版</p> <p>15M</p> </div>';
+        bottCont = '<a href="itms-services://?action=download-manifest&amp;url=ios/manifest.plist"><span class="instrBtn">下载</span></a>';
+        cont = '<a href="itms-services://?action=download-manifest&amp;url=ios/manifest.plist"><P><img  width ="80px" src="images/icon-srmj.png"/></P></a><div class="main_info"> <p class="game_name">GYZY</p> <p>ios版</p> <p>15M</p> </div>';
     }
     else{
         bottCont = '<a href="srmj/sairenmj.apk"><span class="instrBtn">下载</span></a>';
@@ -84,15 +69,7 @@
         $(".main ").prepend(cont);
     }
     $(".bottomCont ").prepend(bottCont);
-//    function is_weixn(){
-//        var ua = navigator.userAgent.toLowerCase();
-//        if(ua.match(/MicroMessenger/i)=='micromessenger') {
-//            alert('在微信里打开');
-//        } else {
-//            alert('不在微信里打开');
-//        }
-//    }
-//    is_weixn();
+
 </script>
 <script>
     $(function ($) {
