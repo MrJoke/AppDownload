@@ -12,7 +12,7 @@
      <string>software-package</string>
      <key>url</key>
      <!-- http����https���ӵ�ipa�ļ���ַ -->
-     <string>https://gyzy.sairengame.com/svn/AppDownload/gyzy/ios/gyzy.ipa</string>
+     <string>ios/gyzy.ipa</string>
     </dict>
     <dict>
      <key>kind</key>
@@ -21,7 +21,7 @@
      <true/>
      <key>url</key>
      <!-- http����https���ӵ�ͼƬ��ַ����ֱ��ʹ��app��Ӧ��icon���ֱ���ûǿ��Ҫ�� -->
-     <string>https://gyzy.sairengame.com/svn/AppDownload/gyzy/ios/gyzy.png</string>
+     <string>ios/gyzy.png</string>
     </dict>
     <dict>
      <key>kind</key>
@@ -30,7 +30,7 @@
      <true/>
      <key>url</key>
      <!-- http����https���ӵ�СͼƬ��ַ����ֱ��ʹ��app��Ӧ��icon���ֱ���ûǿ��Ҫ�� -->
-     <string>https://gyzy.sairengame.com/svn/AppDownload/gyzy/ios/gyzy.png</string>
+     <string>ios/gyzy.png</string>
     </dict>
    </array>
    <key>metadata</key>
