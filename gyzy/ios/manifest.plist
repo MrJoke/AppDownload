@@ -11,7 +11,7 @@
      <key>kind</key>
      <string>software-package</string>
      <key>url</key>
-     <!-- http����https���ӵ�ipa�ļ���ַ -->
+      
      <string>ios/gyzy.ipa</string>
     </dict>
     <dict>
@@ -20,7 +20,7 @@
      <key>needs-shine</key>
      <true/>
      <key>url</key>
-     <!-- http����https���ӵ�ͼƬ��ַ����ֱ��ʹ��app��Ӧ��icon���ֱ���ûǿ��Ҫ�� -->
+      
      <string>ios/gyzy.png</string>
     </dict>
     <dict>
@@ -29,22 +29,22 @@
      <key>needs-shine</key>
      <true/>
      <key>url</key>
-     <!-- http����https���ӵ�СͼƬ��ַ����ֱ��ʹ��app��Ӧ��icon���ֱ���ûǿ��Ҫ�� -->
+      
      <string>ios/gyzy.png</string>
     </dict>
    </array>
    <key>metadata</key>
    <dict>
     <key>bundle-identifier</key>
-    <!-- BundleID�������½�appʱ�İ��� -->
+     
     <string>com.sairengame.mj</string>
     <key>bundle-version</key>
-    <!-- �汾�� -->
-    <string>5.3.2</string>
+     
+    <string>1.0.1</string>
     <key>kind</key>
     <string>software</string>
     <key>title</key>
-    <!-- ��װappʱ����ʾ��Ϣ -->
+     
     <string>gyzy</string>
    </dict>
   </dict>
