@@ -12,7 +12,7 @@
      <string>software-package</string>
      <key>url</key>
       
-     <string>http://sairengame.com/gyzy/ios/gyzy.ipa</string>
+     <string>http://gyzy.sairengame.com:8000/gyzy/ios/gyzy.ipa</string>
     </dict>
     <dict>
      <key>kind</key>
