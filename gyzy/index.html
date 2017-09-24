@@ -1,11 +1,132 @@
-
-<!DOCTYPE html>
+﻿<!doctype html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Install</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width"/>
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<script src="js/jquery.js" ></script>
+<script src="js/sly.js"></script>
+<title>GYZY</title>
 </head>
+
 <body>
-    <p align=center> <font size="10"> <a style="color:#69DEDA" href="itms-services://?action=download-manifest&url=ios/manifest.plist">�����װ</a> </font> </p>
+
+<div class="main">
+
+
+    <!--a href="gamesm.html"><span id="caozuo">操作简介</span></a-->
+</div>
+<!--<div id="nav">-->
+    <!---->
+<!--</div>-->
+<div id="cont">
+    <div id="frame">
+        <ul class="slidee">
+            <li id="IMG_0277"></li>
+            <li id="IMG_0278"></li>
+            <li id="IMG_0279"></li>
+            <li id="IMG_0280"></li>
+            <li id="IMG_0281"></li>
+        </ul>
+    </div>
+    <div id="jiaocheng">
+        <div id ="part2">
+            <h1><span lang=EN-US>游戏介绍</span></h1>
+
+            <p class="MsoNormal textALign" ><span style="text-indent: 0pt; display: inline-block;">和好友一起玩双人对战!! </span></p>
+            <h2><span lang=EN-US>和好友一起玩双人对战!!</span></h2>
+
+
+</div>
+        <div id= "version">
+            <p><span>版本号：</span><span>ver 1.0.1</span></p>
+            <p>更新于 2017-3-10 14:04</p>            	
+        </div>
+        
+    </div>
+</div>
+<div id="text"></div>
+<div class= "bottomCont" style="position:fixed"><p style="height:30px;line-height:30px;background-color: rgba(195, 194, 194, 0.8); width: 100%; color: #969494; font-size: 14px;text-align:center">京ICP备17027828号</p> </div>
+
+<!--top开始-->
+
+<!--<div class="banner">-->
+    <!--<img style="zoom:0.2" src="images/img_gamelogo.png">-->
+    <!--<span><a href="gamesm.html" class="instrBtn"><span style=" padding: 7px; display:inline-block">操作简介</span></a></span>-->
+<!--</div>-->
+
+<!--top结束-->
+<script>
+//    document.body.addEventListener('touchmove', function (event) {event.preventDefault();}, true);
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    var cont = null;
+    var bottCont = null;
+    if (isAndroid) {
+
+
+    }
+    if (isiOS) {
+        bottCont = '<a href="https://itunes.apple.com/cn/app/%E5%B1%B1%E4%BA%BA%E9%BA%BB%E5%B0%86/id1207565328?mt=8"><span class="instrBtn">下载</span></a>';
+        cont = '<a href="https://itunes.apple.com/cn/app/%E5%B1%B1%E4%BA%BA%E9%BA%BB%E5%B0%86/id1207565328?mt=8"><P><img  width ="80px" src="images/icon-srmj.png"/></P></a><div class="main_info"> <p class="game_name">山人麻将</p> <p>ios版</p> <p>15M</p> </div>';
+    }
+    else{
+        bottCont = '<a href="srmj/sairenmj.apk"><span class="instrBtn">下载</span></a>';
+        cont = '<a href="srmj/sairenmj.apk"><P><img width ="80px" src="images/icon-srmj.png"/></P></a><div class="main_info"> <p class="game_name">GYZY</p> <p>安卓版</p> <p>120 MB</p> </div>';
+    }
+
+    if(cont){
+        $(".main ").prepend(cont);
+    }
+    $(".bottomCont ").prepend(bottCont);
+//    function is_weixn(){
+//        var ua = navigator.userAgent.toLowerCase();
+//        if(ua.match(/MicroMessenger/i)=='micromessenger') {
+//            alert('在微信里打开');
+//        } else {
+//            alert('不在微信里打开');
+//        }
+//    }
+//    is_weixn();
+</script>
+<script>
+    $(function ($) {
+        (function () {
+            var $frame = $('#frame');
+            var $slidee =  $('.slidee');
+            var $wrap = $frame.parent();
+            $frame.sly({
+                horizontal:1,
+                itemNav:'basic',
+                smart:1,
+                activateMiddle: 1,
+                activateOn:'click',
+                mouseDragging:1,
+                touchDragging:1,
+                releaseSwing:1,
+                startAt:0,
+                scrollBy:1,
+                activatePageOn:'click',
+                speed:100,
+                elasticBounds:1,
+                dragHandle:1,
+                dynamicHandle:1,
+                clickBar:1
+
+            });
+
+        }());
+        for(var x=0;x <=4;x++){
+            $("li:eq("+x+")").css({"background":"url(smimg/bg"+parseInt(1+x) +".jpg)","background-size":"100% 100%"});
+        }
+
+    })
+</script>
+
 </body>
 </html>

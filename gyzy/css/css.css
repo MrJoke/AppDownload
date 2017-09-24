@@ -1,0 +1,270 @@
+﻿/* CSS Document */
+@charset "utf-8";
+*{ margin:0; padding:0; list-style:none;    text-align: left;
+}
+	input[type="button"], 
+	input[type="submit"], 
+	input[type="reset"] 
+	{
+	-webkit-appearance: none;}
+a{ text-decoration:none;} 
+body{
+	width:100%;
+	max-width:640px;
+	margin:0 auto;
+	background:#fff;
+	top:0px; bottom:0px; left:0px; right:0px;
+	min-width:320px;}	
+
+.main{
+	padding-top: 2em;
+	width:100%;
+	max-width:640px;
+	position: fixed;
+	z-index: 9;
+	background: #fff;
+	padding-bottom: 26px;
+}
+.main div{
+	float: left;
+	margin-top: -78px;
+	}
+.main div li{
+	width:50%;
+	max-width:230px;
+	margin:0 auto;
+	padding:4% 0;
+	/*margin-top:5%;
+	margin-left:8%;*/
+ }
+ .border{border-bottom:1px solid #d2d2d2;
+	border-right:1px solid #d2d2d2;}
+
+.main a p{
+	text-align:left;
+	color:#5b595a;}
+.main a p img{
+	margin-left: 20px;
+}
+.main a p span{
+	 clear:both; padding:0px 10px; line-height:30px; font-size:16px;  text-overflow:ellipsis; white-space:nowrap; text-align:center}
+
+.main .main_info{
+	margin-left: 112px;
+}
+.main_info p{
+	text-align: left;
+	margin: 3px 0;
+	font-size: 14px;
+}
+.main_info .game_name{
+	font-size: 18px;
+	font-weight: bold;
+}
+.foot{
+	color:#838383;
+	line-height:130px;
+	/*margin-top:95%;*/
+	/*width:100%;
+	margin:0 auto;*/
+	text-align:center;
+}
+#cont{
+	margin-top: 170px;
+	width: 100%;
+	padding-bottom: 72px;
+}
+#caozuo {
+	width: 90px;
+	height: 26px;
+	border: 0;
+	background-color: #7cb4f7;
+	border-radius: 50px 50px;
+	font-size: 10pt;
+	font-weight: bold;
+	font-style: inherit;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	line-height: 26px;
+	margin: 10px 0;
+	color: #fff;
+	float: right;
+	margin-right: 20px;
+	margin-top: -38px;
+}
+/*--首页结束-------------------------------------------------------------*/
+
+
+	#frame{
+		width:100%;
+
+		margin:auto;
+		height:260px;
+		position: relative;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		-webkit-perspective: 260px;
+		-ms-perspective: 260px;
+		perspective: 260px;
+		-webkit-perspective-origin: 50% 50%;
+		-ms-perspective-origin: 50% 50%;
+		perspective-origin: 50% 50%;
+	}
+#frame ul{
+	margin:0;
+	padding:0;
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.slidee li{
+
+	width:180px;
+	height:250px;
+	background: #82884e;
+	float:left;
+	margin: 0 5px;
+	padding:0px;
+	list-style:none;
+	-webkit-transform: rotateY(0deg) scale(1);
+	-ms-transform: rotateY(0deg) scale(1);
+	transform: rotateY(0deg) scale(1);
+	-webkit-transition: -webkit-transform 300ms ease-out;
+	transition: transform 300ms ease-out;
+	background-size:100% 100%;
+
+}
+
+li.active ~ li {
+	-webkit-transform: rotateY(-0deg) scale(1);
+	-ms-transform: rotateY(-0deg) scale(1);
+	transform: rotateY(-0deg) scale(1);
+
+}
+
+li.active{
+	background:#738;
+	-webkit-transform: scale(1);
+	z-index:10;
+}
+
+#jiaocheng{
+	position: relative;
+	width: 90%
+}
+
+
+/*底部下载********************************************************************************************/
+.bottomCont{
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	background: #f7f6f6;
+	left: 0;
+}
+.instrBtn{
+	width: 270px;
+	height: 46px;
+	border: 0;
+	background-color: #4fce11;
+	border-radius: 50px 50px;
+	font-size: 16pt;
+	font-weight: bold;
+	font-style: inherit;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	line-height: 46px;
+	margin: 10px 0;
+	color: #fff;
+}
+
+/***中间内容*************************************************************************/
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2) {
+	/*iphone 6*/
+}
+
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3) {
+	/*iphone 6 plus*/
+}
+/*320px布局*/
+html {
+	font-size: 100px;
+}
+
+body {
+	font-size: 0.14rem; /*实际相当于14px*/
+	padding:0;
+}
+
+/* iphone 6 */
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2) {
+	html {
+		font-size: 117.1875px;
+	}
+}
+/* iphone6 plus */
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3) {
+	html {
+		font-size: 129.375px;
+	}
+}
+div {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	text-align: center;
+}
+p.textAlign {
+	margin:10pt
+}
+p.imgCenter {
+	text-align: center;
+}
+
+#part1 {
+	width: 100%;
+	background-color: #19818c;
+	text-align: center;
+}
+#part1 button {
+	width: 180px;
+	height: 40px;
+	padding: 0;
+	margin: -10px 0 30px 0;
+	background-color: #c6f9ad;
+	border-radius: 50px;
+	border-radius: 50px 50px;
+	border-bottom-color: rgba(169, 255, 144, 0.97);
+	border-width: 0 0 4px 0;
+	box-shadow: -0px 0 0px red, /*左边阴影*/ 0px 0 0px yellow, /*右边阴影*/ 0 5px 5px rgba(41, 60, 42, 0.17), /*顶部阴影*/ 0 1px 2px rgba(34, 62, 34, 0.47);
+	color: #5c883c;
+	font-size: 16pt;
+	font-weight: bold;
+	font-style: inherit;
+	text-shadow: 0 1px 1px rgb(231, 255, 234);
+}
+#part2 {
+	width: 100%;
+}
+#part3 {
+	width: 100%;
+}
+#version {
+	/* background-color: rgba(70, 70, 70, 0.8); */
+	width: 100%;
+	/* color: white; */
+	margin-top: 20px;
+	color: #818082;
+}
+.MsoNormal{
+	color:#7d7d7d;
+}
+#jiaocheng h1 ,#jiaocheng h2{
+	font-size:18px;
+	margin-bottom: 15px;
+	margin-top:40px;
+}
